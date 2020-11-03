@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ynu_network_reset</id>
+    <version>1.0.0</version>
+    <title>ynu_network_reset</title>
+    <authors>Donghua Liu</authors>
+    <owners>Donghua Liu</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>http://github.com/liudonghua123/ynu_network_reset</projectUrl>
+    <icon>lib/net45/data/flutter_assets/assets/icon.png</icon>
+    <iconUrl>https://raw.githubusercontent.com/liudonghua123/ynu_network_reset/master/resources/icon.png</iconUrl>
+    <description>ynu_network_reset is a simple and small network config app.</description>
+    <copyright>Copyright 2020, all rights reserved</copyright>
+    <tags>flutter windows network</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+    </dependencies>
+  </metadata>
+</package>
