@@ -59,10 +59,10 @@ jobs:
           7z a -tzip ${APP_NAME}-windows-x64-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip -r .\build\windows\runner\Release\*
         shell: bash
 
-      - uses: xresloader/upload-to-github-release@v1
+      - uses: liudonghua123/upload-to-github-release@env-interpolation
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          file: ynu_network_reset-windows-x64-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip; build/squirrel.windows.build-release/*
+          file: ${APP_NAME}-windows-x64-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip; build/squirrel.windows.build-release/*
           tags: true
           draft: false

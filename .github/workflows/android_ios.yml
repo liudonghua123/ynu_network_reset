@@ -46,10 +46,10 @@ jobs:
           zip ${APP_NAME}-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip -r ${APP_NAME}-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.app
           cp build/app/outputs/apk/release/app-release.apk ${APP_NAME}-android-${{ steps.branch_name.outputs.SOURCE_NAME }}.apk
 
-      - uses: xresloader/upload-to-github-release@v1
+      - uses: liudonghua123/upload-to-github-release@env-interpolation
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          file: ynu_network_reset-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip;ynu_network_reset-android-${{ steps.branch_name.outputs.SOURCE_NAME }}.apk
+          file: ${APP_NAME}-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip;${APP_NAME}-android-${{ steps.branch_name.outputs.SOURCE_NAME }}.apk
           tags: true
           draft: false
