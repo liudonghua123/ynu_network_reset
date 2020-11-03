@@ -35,9 +35,18 @@ class _HomePageState extends State<HomePage> {
   List<UserDetails> userDetails = [];
 
   List<UserDetails> _parseUserUsernames(String usernames) {
+    var usernameRegExp = RegExp(r'^.*?(?<username>\w+).*?$');
     return usernames
         .split(RegExp(r'\r?\n'))
-        .map((item) => UserDetails(username: item))
+        .map((item) {
+          var match = usernameRegExp.firstMatch(item);
+          if (match == null) {
+            return UserDetails(username: '');
+          }
+          var username = match.namedGroup('username');
+          return UserDetails(username: username);
+        })
+        .where((item) => item.username.isNotEmpty)
         .toList();
   }
 
