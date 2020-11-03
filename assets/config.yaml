@@ -1,0 +1,6 @@
+# production environment configurations
+production:
+  apiHost: https://113.55.14.6:8001
+# debug environment configurations
+debug:
+  apiHost: https://113.55.14.6:8001
