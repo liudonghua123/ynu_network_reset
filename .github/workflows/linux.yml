@@ -57,6 +57,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          file: ${APP_NAME}-linux-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip
+          file: ynu_network_reset-linux-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip
           tags: true
           draft: false

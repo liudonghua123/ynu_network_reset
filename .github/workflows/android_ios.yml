@@ -50,6 +50,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          file: ${APP_NAME}-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip;${APP_NAME}-android-${{ steps.branch_name.outputs.SOURCE_NAME }}.apk
+          file: ynu_network_reset-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip;ynu_network_reset-android-${{ steps.branch_name.outputs.SOURCE_NAME }}.apk
           tags: true
           draft: false

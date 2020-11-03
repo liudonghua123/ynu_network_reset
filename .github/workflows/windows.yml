@@ -57,11 +57,12 @@ jobs:
       - name: Prepare release files
         run: |
           7z a -tzip ${APP_NAME}-windows-x64-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip -r .\build\windows\runner\Release\*
+        shell: bash
 
       - uses: xresloader/upload-to-github-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          file: ${APP_NAME}-windows-x64-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip; build/squirrel.windows.build-release/*
+          file: ynu_network_reset-windows-x64-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip; build/squirrel.windows.build-release/*
           tags: true
           draft: false
