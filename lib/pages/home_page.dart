@@ -94,7 +94,6 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       userDetail.onlineDropped = STATUS.PROCESSING;
     });
-    await Future.delayed(Duration(seconds: 1));
     var result = await Service().batchOnlineDrop(userDetail.username);
     setState(() {
       userDetail.onlineDropped = STATUS.DONE;
@@ -118,6 +117,7 @@ class _HomePageState extends State<HomePage> {
     });
     var result = false;
     var macAddresses = await Service().listMacAuth(userDetail.username) ?? [];
+    print('got macAddresses: $macAddresses');
     for (var macAddress in macAddresses) {
       result = await Service().deleteMacAuth(userDetail.username, macAddress);
       if (!result) {
