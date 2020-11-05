@@ -10,7 +10,7 @@ const RESOURCES = {
 "assets/assets/35785-preloader-wifiish-by-fendah-cyberbryte.json": "70390b729c8c1317f3a81b8544a6c61e",
 "assets/assets/28189-github-octocat.json": "79b88b248a70055c5af808e04d82baba",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "a5c740ec173c10450aedfcdbacea39d0",
+"assets/NOTICES": "20d6dfde7957ac76fd5a51e91c33ca08",
 "assets/FontManifest.json": "cbd20421c4d4cf9f02a72e3d44c4c1da",
 "assets/packages/flutter_vector_icons/fonts/MaterialIcons.ttf": "a37b0c01c0baf1888ca812cc0508f6e2",
 "assets/packages/flutter_vector_icons/fonts/FontAwesome5_Regular.ttf": "f6c6f6c8cb7784254ad00056f6fbd74e",
@@ -287,10 +287,10 @@ const RESOURCES = {
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b14fcf3ee94e3ace300b192e9e7c8c5d",
 "assets/AssetManifest.json": "01dcbc347fb30ee1f3ee54d8eb9e1bb7",
 "manifest.json": "5d0d6af516438e1bc4dbaf9812000727",
-"main.dart.js": "ebbfb08cb03e589a80554bbc29468e8e",
+"main.dart.js": "a1849ad98ba0574f5ad2cfaa7f3b2bde",
 "version.json": "301d6126f6ab5e1fb89063cdc75e9b1b",
-"index.html": "6257f83bd9ec2801fb5a5136498547f4",
-"/": "6257f83bd9ec2801fb5a5136498547f4",
+"index.html": "869f8e72fc38eb6b6b72a5e58badb8f9",
+"/": "869f8e72fc38eb6b6b72a5e58badb8f9",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1"
 };
