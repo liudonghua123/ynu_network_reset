@@ -53,3 +53,4 @@ jobs:
           file: ${APP_NAME}-ios-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip;${APP_NAME}-android-${{ steps.branch_name.outputs.SOURCE_NAME }}.apk
           tags: true
           draft: false
+          overwrite: true
