@@ -59,7 +59,7 @@ jobs:
           7z a -tzip ${APP_NAME}-windows-x64-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip -r ./build/windows/runner/Release/*
         shell: bash
 
-      - uses: liudonghua123/upload-to-github-release@env-interpolation
+      - uses: xresloader/upload-to-github-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

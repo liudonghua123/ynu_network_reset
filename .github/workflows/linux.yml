@@ -53,7 +53,7 @@ jobs:
           cp -r build/linux/release/bundle ${APP_NAME}-linux-${{ steps.branch_name.outputs.SOURCE_NAME }}
           zip ${APP_NAME}-linux-${{ steps.branch_name.outputs.SOURCE_NAME }}.zip -r ${APP_NAME}-linux-${{ steps.branch_name.outputs.SOURCE_NAME }}
 
-      - uses: liudonghua123/upload-to-github-release@env-interpolation
+      - uses: xresloader/upload-to-github-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
